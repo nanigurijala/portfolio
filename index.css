@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif !important;
+    font-size: 15px;
+    line-height: 2em;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+.columns-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-column-block{
+    width:50%;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+
+.right-column-block{
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 600px){
+    .left-column-block{
+        width: 100% ;
+        position: relative;
+    }
+    .right-column-block{
+        width: 100%;
+        position: relative;
+    }
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    vertical-align: middle;
+    position: relative;
+}
+
+.profile-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: ;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imges/nanipic.jpeg);
+    background-size: cover;
+    background-position:center;
+}
+.header .profile-image:after{
+    content:"" ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(-30deg,
+    rgba(42, 84, 250, 0.998)0%,rgba(42, 84, 250, 0.468)30%,transparent 50% , transparent 100%);
+}
+.header .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+
+.header .content h1{
+    font-size: 36px;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+}
+
+.header .content p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.header .content .social-icons{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.header .content .social-icons li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.header .content .social-icons li a{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 2px solid #555;
+    border-radius: 100%;
+}
+
+.header .content .social-icons li a:hover{
+    border-color: #fff;
+}
+
+.section-wrapper{
+    padding: 50px;
+}
+
+.section-tittle{
+    margin-bottom: 15px;
+}
+
+.section-tittle h2{
+    color: #555;
+}
+
+.grey-bg{
+    background: #F9F9F9;
+}
+
+.expertise-item{
+    margin-bottom:20px;
+}
+
+.expertise-item h5{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
+
+.accordion-body h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-body ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-items{
+    margin-bottom:10px;
+}
+
+.content-items h5{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700;
+}
+
+form div button{
+    margin-top: 10px;
+}
+
+form div input{
+    margin-bottom:5px;
+}
