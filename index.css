@@ -8,6 +8,19 @@ body{
     font-weight: 400;
     background: #fff;
 }
+
+h2{
+    font-size: 25px !important;
+    line-height: 1.8em !important;
+    font-weight: 700 !important;
+}
+
+h5{
+    font-size: 18px !important;
+    line-height: 1.8em !important;
+    font-weight: 500 !important;
+}
+
 .columns-block{
     display: flex;
     flex-wrap: wrap;
