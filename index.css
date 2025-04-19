@@ -4,9 +4,9 @@ body{
     font-family: "Roboto", sans-serif !important;
     font-size: 15px;
     line-height: 2em;
-    color: #333;
+    color: #fff;
     font-weight: 400;
-    background: #fff;
+    background:#fff;
 }
 
 h2{
@@ -21,25 +21,54 @@ h5{
     font-weight: 500 !important;
 }
 
+
+
 .columns-block{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;    /* main */
 }
+
+/* .columns-block {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+} */
 
 .left-column-block{
     width:50%;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden;         /*main */
     position: fixed;
     left: 0;
 }
+
+/* .left-column-block {
+    width: 50%;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+} */
+
+
 
 .right-column-block{
     width: 50%;
     position: absolute;
     right: 0;
 }
+
+
+  
+/* #ch {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+} */
+  
 
 @media (max-width: 600px){
     .left-column-block{
